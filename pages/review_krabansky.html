@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Avis | KRABANSKY Gaston</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+        <!-- CSS Links -->
+        <link rel="stylesheet" href="../styles/global_krabansky.css">
+        <link rel="stylesheet" href="../styles/review_krabansky.css">
+
+        <!-- JS Links -->
+        <script type="text/javascript" src="../scripts/fonctions_krabansky.js"></script>
+
+        <!-- Google Fonts Links -->
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+
+        <!--  Boostrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+
+        <div class="firstBlock">
+            <div class="firstBlock-text">
+                <h1>Avis</h1>
+
+                <p>N'hésitez pas à donner votre avis pour ce site web ! En vous remerciant pour notre visite !</p>
+
+                <button class="button" onclick="redirectButton('../index_krabansky.html')">Page d'accueil</button>
+            </div>
+
+            <img class="icon" src="../images/review-icon.png" alt="review-icon">
+        </div>
+
+        <div class="form-container">
+            <h1>Mettez votre note :</h1>
+            <form method="post">
+                <div class="rating">
+                    <!-- Étoiles à personnaliser -->
+                    <a href="#5" title="Donner 5 étoiles">☆</a>
+                    <a href="#4" title="Donner 4 étoiles">☆</a>
+                    <a href="#3" title="Donner 3 étoiles">☆</a>
+                    <a href="#2" title="Donner 2 étoiles">☆</a>
+                    <a href="#1" title="Donner 1 étoile">☆</a>
+                </div>
+                <input type="text" name="pseudo" id="pseudo" required placeholder="Pseudonyme">
+                <textarea name="contact-message" id="contact-message" placeholder="Entrez votre message" cols="80" rows="6" required></textarea>
+                <button class="button" type="submit" onclick="noter()">Envoyer la Note</button>
+            </form>
+        </div>
+
+
+    </body>
+</html>

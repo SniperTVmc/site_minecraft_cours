@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Accueil | KRABANSKY Gaston</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+        <!-- CSS Links -->
+        <link rel="stylesheet" href="styles/global_krabansky.css">
+        <link rel="stylesheet" href="styles/index_krabansky.css">
+
+        <!-- JS Links -->
+        <script type="text/javascript" src="scripts/fonctions_krabansky.js"></script>
+
+        <!-- Google Fonts Links -->
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+
+        <!--  Boostrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div class="message-bubble" onclick="showAudioEnabledMessage()" id="audioEnabled">
+            <p>Vous avez mis en route la douce mélodie !</p>
+        </div>
+
+        <div class="message-bubble" onclick="showAudioDisabledMessage()" id="audioDisabled">
+            <p>Vous avez mis en pause la douce mélodie !</p>
+        </div>
+
+
+        <div class="firstBlock">
+            <div class="firstBlock-text">
+                <h1>Bienvenue sur mon Site Web !</h1>
+                <p>Crée par KRABANSKY Gaston - 2024</p>
+
+
+                <button class="button" onclick="redirectButton('pages/presentation_krabansky.html')">Présentation</button>
+                <button class="button" onclick="redirectButton('pages/gallery_krabansky.html')">Galerie</button>
+                <button class="button" onclick="redirectButton('pages/credits_krabansky.html')">Crédits</button>
+                <button class="button" onclick="redirectButton('pages/review_krabansky.html')">Avis</button>
+            </div>
+
+            <img class="icon" src="images/minecraft-icon.png" alt="minecraft-icon">
+        </div>
+
+
+        <div class="secondBlock">
+            <img class="icon" src="images/question-mark.png" alt="question-mark">
+
+            <div class="secondBlock-text">
+                <h1>C'est quoi Minecraft ?</h1>
+                <p>Minecraft est un jeu vidéo de type aventure bac à sable ("Sandbox" en anglais).<br>
+                    Originalement crée ainsi que développé par Markus Person, (alias Notch) puis par la société Mojang Studios.<br>
+                    Minecraft est finalement sortie 2 ans et demi après sa création, le 18 novembre 2011.
+                </p>
+                <h3>Pour en découvrir plus sur le jeu, <a href="pages/presentation_krabansky.html">cliquez ici</a>.</h3>
+            </div>
+        </div>
+
+        <div class="thirdBlock">
+            <div class="secondBlock-text">
+                <h2>Écoutez dès maintenant la douce musique de ce jeu apaisant...</h2>
+                <p>Cliquez sur le bouton afin de mettre en route/pause la douce mélodie.</p>
+
+                <button id="audioButton" class="button" onclick="toggleAudio()"><i class="bi bi-play"></i></button>
+            </div>
+
+            <img class="icon" src="images/music-icon.png" alt="music-icon">
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Galerie | KRABANSKY Gaston</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+        <!-- CSS Links -->
+        <link rel="stylesheet" href="../styles/global_krabansky.css">
+        <link rel="stylesheet" href="../styles/gallery_krabansky.css">
+
+        <!-- JS Links -->
+        <script type="text/javascript" src="../scripts/fonctions_krabansky.js"></script>
+
+        <!-- Google Fonts Links -->
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+
+        <!--  Boostrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div id="container">
+            <div class="firstBlock">
+                <div class="firstBlock-text">
+                    <h1>Galerie de Paysages</h1>
+                    <p>
+                        <i class="bi bi-exclamation-triangle"></i> Attention <i class="bi bi-exclamation-triangle"></i><br>
+                        Le bloc de TNT est extrêmement réactif, ne pas cliquer dessus !
+                    </p>
+                    <button class="button" onclick="redirectButton('../index_krabansky.html')">Page d'accueil</button>
+                </div>
+
+                <img id="specialTnt" src="../images/tnt.png" alt="tnt" onClick="makeExplosion()">
+            </div>
+
+            <div class="gallery">
+                <img src="../images/gallery/image01.jpg" alt="Image 1">
+                <img src="../images/gallery/image02.jpg" alt="Image 2">
+                <img src="../images/gallery/image03.png" alt="Image 3">
+                <img src="../images/gallery/image04.jpg" alt="Image 4">
+                <img src="../images/gallery/image05.png" alt="Image 5">
+                <img src="../images/gallery/image06.jpg" alt="Image 6">
+                <img src="../images/gallery/image07.jpg" alt="Image 7">
+                <img src="../images/gallery/image08.png" alt="Image 8">
+                <img src="../images/gallery/image09.png" alt="Image 9">
+                <img src="../images/gallery/image10.png" alt="Image 10">
+                <img src="../images/gallery/image11.jpeg" alt="Image 11">
+                <img src="../images/gallery/image12.png" alt="Image 12">
+            </div>
+        </div>
+
+
+        <div id="explosionBox">
+            <h1 id="text">Bravo ! Une très jolie explosion !</h1>
+            <button class="button" id="button" onclick="redirectButton('../index_krabansky.html')">Retour à l'accueil</button>
+        </div>
+
+    </body>
+</html>
